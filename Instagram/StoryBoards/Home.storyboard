@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gCQ-mi-1JB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Instagram-->
+        <scene sceneID="N48-uV-yGI">
+            <objects>
+                <viewController id="puc-jU-Iod" customClass="homeViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hmi-hc-Omc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u7z-pP-LiB">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="u7z-pP-LiB" firstAttribute="top" secondItem="QmP-6V-DuV" secondAttribute="top" id="4uu-PA-tVu"/>
+                            <constraint firstItem="u7z-pP-LiB" firstAttribute="leading" secondItem="QmP-6V-DuV" secondAttribute="leading" id="ftJ-S8-7J0"/>
+                            <constraint firstItem="QmP-6V-DuV" firstAttribute="bottom" secondItem="u7z-pP-LiB" secondAttribute="bottom" id="tjG-ip-QRr"/>
+                            <constraint firstItem="QmP-6V-DuV" firstAttribute="trailing" secondItem="u7z-pP-LiB" secondAttribute="trailing" id="vZc-jl-ymP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QmP-6V-DuV"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="yhg-3Q-2Vq" appends="YES" id="x8K-oS-Pgn"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Instagram" id="nw5-Hm-tWx">
+                        <barButtonItem key="leftBarButtonItem" image="Camera" id="ol4-9a-H9q">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="cameraButton:" destination="puc-jU-Iod" id="a8c-hw-KJh"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="Direct" id="95C-YA-Cnc">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="dOI-An-X98" kind="show" id="4Cy-H5-rDF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="u7z-pP-LiB" id="Hsx-fK-yC1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rGn-EJ-Mxa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="yhg-3Q-2Vq">
+                    <connections>
+                        <segue destination="dOI-An-X98" kind="show" id="NSF-tV-ypL"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="4404" y="-183.05847076461771"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Zy5-C5-fuZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gCQ-mi-1JB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="icon-home" selectedImage="icon-home-filled" id="fFO-Xn-Tm9">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="brv-Ux-OKj">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="puc-jU-Iod" kind="relationship" relationship="rootViewController" id="A9S-hE-NLg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DeX-9y-xd0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3542" y="-183"/>
+        </scene>
+        <!--Messages-->
+        <scene sceneID="pfF-vu-V4P">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Messages" id="dOI-An-X98" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l2E-5c-tTi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5210" y="-183"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Camera" width="25" height="22"/>
+        <image name="Direct" width="25" height="22"/>
+        <image name="icon-home" width="21" height="20"/>
+        <image name="icon-home-filled" width="21" height="19"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="4Cy-H5-rDF"/>
+    </inferredMetricsTieBreakers>
+</document>
