@@ -156,6 +156,7 @@
 				151A9002206668AB005E666B /* Assets.xcassets */,
 				151A9007206668AB005E666B /* Info.plist */,
 				151A902A2068517A005E666B /* GoogleService-Info.plist */,
+				156813782069575C009819A1 /* Instagram-Bridging-Header.h */,
 				151A8FFF206668AB005E666B /* Instagram.xcdatamodeld */,
 			);
 			path = Instagram;
@@ -249,7 +250,6 @@
 				156813792069575D009819A1 /* ProgressHUD.bundle */,
 				1568137B2069575E009819A1 /* ProgressHUD.h */,
 				1568137A2069575D009819A1 /* ProgressHUD.m */,
-				156813782069575C009819A1 /* Instagram-Bridging-Header.h */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
