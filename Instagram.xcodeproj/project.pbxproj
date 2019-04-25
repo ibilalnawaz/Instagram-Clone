@@ -150,16 +150,13 @@
 				155620442072128B0003AC4D /* Font */,
 				153DD03A2076DCA200FDB5B7 /* Custom Cells */,
 				156813822069D0A3009819A1 /* Model */,
-				1568137520693E38009819A1 /* viewControllers */,
-				151A9002206668AB005E666B /* Assets.xcassets */,
+				1568137520693E38009819A1 /* Controllers */,
 				151A902720685080005E666B /* StoryBoards */,
+				15D03F25227229200084BB9C /* Frameworks */,
+				151A9002206668AB005E666B /* Assets.xcassets */,
 				151A9007206668AB005E666B /* Info.plist */,
 				151A902A2068517A005E666B /* GoogleService-Info.plist */,
 				151A8FFF206668AB005E666B /* Instagram.xcdatamodeld */,
-				156813792069575D009819A1 /* ProgressHUD.bundle */,
-				1568137B2069575E009819A1 /* ProgressHUD.h */,
-				1568137A2069575D009819A1 /* ProgressHUD.m */,
-				156813782069575C009819A1 /* Instagram-Bridging-Header.h */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -213,7 +210,7 @@
 			path = cell;
 			sourceTree = "<group>";
 		};
-		1568137520693E38009819A1 /* viewControllers */ = {
+		1568137520693E38009819A1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				151A900F2066692C005E666B /* logInViewController.swift */,
@@ -231,7 +228,7 @@
 				1593B78A207BC73900815CC3 /* messagesViewController.swift */,
 				1593B78E207BCEC200815CC3 /* userMessageViewController.swift */,
 			);
-			path = viewControllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		156813822069D0A3009819A1 /* Model */ = {
@@ -244,6 +241,17 @@
 				15AFC7C6207D4A7D00DBD47E /* Message.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		15D03F25227229200084BB9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				156813792069575D009819A1 /* ProgressHUD.bundle */,
+				1568137B2069575E009819A1 /* ProgressHUD.h */,
+				1568137A2069575D009819A1 /* ProgressHUD.m */,
+				156813782069575C009819A1 /* Instagram-Bridging-Header.h */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		63FAB2FC7D9DAFA488487C8B /* Pods */ = {
